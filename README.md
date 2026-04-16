@@ -46,7 +46,7 @@ sudo mn --controller=remote,ip=127.0.0.1 --topo=single,3
 
 ## SDN Logic & Implementation
 
-The controller handles packet_in events by learning source MAC addresses and installing explicit flow rules to the switch.
+The controller handles `packet_in` events by learning source MAC addresses and installing explicit flow rules to the switch.
 - Match: Ethernet Source and Destination MAC addresses.
 - Action: Output to the learned physical port.
 
